@@ -264,6 +264,19 @@ p, span, div {
 .fs-199 {font-size: 199px;}
 .fs-200 {font-size: 200px;}
 
+/*[ font-weight ]
+-----------------------------------------------------------
+*/
+.fw-100 {font-weight: 100;}
+.fw-200 {font-weight: 200;}
+.fw-300 {font-weight: 300;}
+.fw-400 {font-weight: 400;}
+.fw-500 {font-weight: 500;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+.fw-800 {font-weight: 800;}
+.fw-900 {font-weight: 900;}
+
 /*[ Opacity ]
 -----------------------------------------------------------
 */
@@ -299,6 +312,33 @@ p, span, div {
 	background: #CCC;
 }
 
+.flex-container {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #757575
+}
+
+.flex-container:hover {
+	background: beige;
+}
+
+.flex-container > div {	
+	width: 150px;
+	margin: 2px;
+	flex-grow: 1;	
+    padding-bottom: 15px;
+} 
+
+.flex-container .titutlo {
+	font-weight: 600;
+	border-bottom: 1px solid #e0e0e0;
+	color: #757575;
+	font-size: 15px;
+}
+
+
 /*[styles c3]*/
 .c3-ygrid-line.lineRed line {
   stroke: #ec407a;
@@ -317,15 +357,4 @@ p, span, div {
 .c3-xgrid-line.lineGreen text {
   fill: #388e3c;
   font-weight: 600;
-}
-
-/*MEDIA SCREEN*/
-/*MEDIA SCREEN*/
-.hidden-mobile {
-  display: block;
-}
-@media screen and (max-width: 768px) {
-	.hidden-mobile {
-	  display: none;
-	}
 }
